@@ -1,7 +1,7 @@
 
 import java.util.stream.IntStream;
 
-public class Exercises {
+public class ProductExceptIndexProblem {
 
     public int [] getProductsOfAllIntsExceptAtIndex(int[] inputArray){
         if (inputArray.length < 2) {

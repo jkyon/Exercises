@@ -5,16 +5,19 @@ public class Start {
 
     public static void main(String[] args){
 
-        Exercises ex = new Exercises();
-
-        int [] result = ex.getProductsOfAllIntsExceptAtIndex(new int[] {1,2});
-
-        for (int item: result) {
-            System.out.println(item);
-        }
+        SolveProductExceptIndexProblem();
 
 
     }
 
+    public static void SolveProductExceptIndexProblem(){
+        ProductExceptIndexProblem ex = new ProductExceptIndexProblem();
+
+        int [] result = ex.getProductsOfAllIntsExceptAtIndex(new int[] {1,2,3,4});
+
+        for (int item: result) {
+            System.out.println(item);
+        }
+    }
 }
 
