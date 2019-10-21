@@ -5,6 +5,8 @@ public class Start {
 
         SolveProductExceptIndexProblem();
 
+        SolveSocketMerchantProblem();
+
 
     }
 
@@ -16,6 +18,12 @@ public class Start {
         for (int item: result) {
             System.out.println(item);
         }
+    }
+
+    public static void SolveSocketMerchantProblem(){
+        SocketMerchantProblem ex = new SocketMerchantProblem();
+        int result = ex.sockMerchant(7, new int[] {1,2,1,2,1,3,2});
+        System.out.println(result);
     }
 }
 
