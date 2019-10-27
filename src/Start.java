@@ -1,13 +1,16 @@
+import java.math.BigInteger;
 
 public class Start {
 
     public static void main(String[] args){
 
-        SolveProductExceptIndexProblem();
+        //SolveProductExceptIndexProblem();
 
-        SolveSocketMerchantProblem();
+        //*SolveSocketMerchantProblem();
 
-        SolveJumpingCloudsProblem();
+        //SolveJumpingCloudsProblem();
+
+        SolveRepeatedStringProblem();
     }
 
     public static void SolveProductExceptIndexProblem(){
@@ -29,6 +32,14 @@ public class Start {
     public static void SolveJumpingCloudsProblem(){
         JumpingClouds ex = new JumpingClouds();
         int result = ex.jumpingOnClouds(new int[] {0, 0, 1, 0, 0, 0, 0, 1, 0, 0});
+        System.out.println(result);
+    }
+
+
+    public static void SolveRepeatedStringProblem(){
+        RepeatedStringsFinder ex = new RepeatedStringsFinder();
+        long a = 549382313;
+        long result = ex.repeatedString("epsxyyflvrrrxzvnoenvpegvuonodjoxfwdmcvwctmekpsnamchznsoxaklzjgrqruyzavshfbmuhdwwmpbkwcuomqhiyvuztwvq", a);
         System.out.println(result);
     }
 }
