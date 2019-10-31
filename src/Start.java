@@ -10,7 +10,9 @@ public class Start {
 
         //SolveJumpingCloudsProblem();
 
-        SolveRepeatedStringProblem();
+        //SolveRepeatedStringProblem();
+        
+        SolveCountingValleyProblem();
     }
 
     public static void SolveProductExceptIndexProblem(){
@@ -40,6 +42,13 @@ public class Start {
         RepeatedStringsFinder ex = new RepeatedStringsFinder();
         long a = 549382313;
         long result = ex.repeatedString("epsxyyflvrrrxzvnoenvpegvuonodjoxfwdmcvwctmekpsnamchznsoxaklzjgrqruyzavshfbmuhdwwmpbkwcuomqhiyvuztwvq", a);
+        System.out.println(result);
+    }
+
+
+    public static void  SolveCountingValleyProblem(){
+        ValleyCounter ex = new ValleyCounter();
+        int result = ex.countingValleys(12, "DDUUDDUDUUUD");
         System.out.println(result);
     }
 }
