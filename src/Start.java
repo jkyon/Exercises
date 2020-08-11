@@ -1,4 +1,11 @@
 import java.math.BigInteger;
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
 
 public class Start {
 
@@ -11,8 +18,9 @@ public class Start {
         //SolveJumpingCloudsProblem();
 
         //SolveRepeatedStringProblem();
-        
-        SolveCountingValleyProblem();
+
+        //SolveCountingValleyProblem();
+        SolveHourglassProblem();
     }
 
     public static void SolveProductExceptIndexProblem(){
@@ -49,6 +57,20 @@ public class Start {
     public static void  SolveCountingValleyProblem(){
         ValleyCounter ex = new ValleyCounter();
         int result = ex.countingValleys(12, "DDUUDDUDUUUD");
+        System.out.println(result);
+    }
+
+    public static void SolveHourglassProblem(){
+        int[][] arr = {
+                {0, -4, -6, 0, -7, -6},
+                {-1, -2, -6, -8, -3, -1},
+                {-8, -4, -2, -8, -8, -6},
+                {-3, -1, -2, -5, -7, -4},
+                {-3, -5, -3, -6, -6, -6},
+                {-3, -6, 0, -8, -6, -7}
+        };
+        HourglassProblem h = new HourglassProblem();
+        int result = h.hourGlassSum(arr);
         System.out.println(result);
     }
 }
